@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("http://localhost:5000/api/books");
+      const response = await fetch("https://librarymanagementserver.onrender.com/api/books");
       const bookData = await response.json();
       setBooks(bookData);
       setFilteredBooks(bookData);
